@@ -1,0 +1,81 @@
+/* Reset default margin and padding */
+body, ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Basic styling */
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+.services {
+  list-style: none;
+  display: flex;
+  padding: 0; /* Remove padding to avoid extra space */
+  justify-content: space-evenly;
+}
+
+/* Style the service divs */
+.services .service {
+  flex: 1; /* Distribute available space equally */
+  margin-right: 20px;
+  background-image: url('../images/bg.jpg'); /* Add the path to your background image */
+  background-size: cover; /* Adjust the background size as needed */
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: white; /* Set text color to be visible against the background image */
+  text-align: center; /* Center align text */
+  padding: 20px;
+  height: 200px;
+  opacity: 0.6;
+}
+
+
+/* Remove margin from the last service div */
+.services .service:last-child {
+  margin-right: 0;
+}
+
+
+/* Style the p tag inside the service box */
+.services .service p {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40%;
+    box-sizing: border-box;
+}
