@@ -14,8 +14,10 @@
         <li><a href="#">Contact</a></li>
       </ul>
     </nav>
-    <h1>Welcome to My Website</h1>
+    <h1 id="rameezline"><?php echo "Adva Web Services";  ?></h1>
   </header>
+
+
 
   <main>
     <section>
@@ -23,22 +25,44 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </section>
 
+   <!-- this is an html comment -->
+    <section>
+      <h2>Our Services</h2>
+      <div class="services">
+
+        <?php for($i= 1; $i <=3 ; $i++){ ?> 
+        <div class="service">
+          <p>Service <?php echo $i ; ?></p>
+        </div>
+        <?php } ?>
+
+      </div>
+    </section>
+
+
+    <?php $services = array('HR','IT','Recruitment'); ?>
+
     <section>
       <h2>Our Services</h2>
       
       <div class="services">
-        <div class="service">
-          <p>Service 1</p>
-        </div>
-        <div class="service">
-          <p>Service 2</p>
-        </div>
-        <div class="service">
-          <p>Service 3</p>
-        </div>
-      </div>
 
+        <?php foreach ($services as $service) { ?>
+
+        <div class="service">
+          <p><?php echo $service ?></p>
+        </div>
+
+        <?php } ?>
+        
+
+      </div>
     </section>
+
+
+
+
+
   </main>
 
   <footer>
